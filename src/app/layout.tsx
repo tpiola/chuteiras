@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
+  alternates: { canonical: "https://chuteiras.vercel.app" },
 };
 
 export default function RootLayout({
@@ -206,6 +207,27 @@ export default function RootLayout({
           id="schema-breadcrumb"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <Script
+          id="schema-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Roberto",
+              alternateName: "Roberto Chuteiras Premium",
+              url: "https://chuteiras.vercel.app",
+              description:
+                "Roberto: loja oficial de chuteiras premium para campo, society e futsal. Frete grátis Brasil.",
+              inLanguage: "pt-BR",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://chuteiras.vercel.app/colecao?search={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
         />
         <Header />
         <main className="flex-1">{children}</main>
