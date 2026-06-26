@@ -1,0 +1,415 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   ROBERTO CHUTEIRAS — VERDE CAMPO PREMIUM
+   bg=#0A0A0A preto · accent=#00B341 verde field · surface=#111111 cinza escuro
+   foreground=#FFFFFF branco · text-muted=#888888
+───────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Fundo / Superfícies */
+  --background:     #0A0A0A;
+  --surface:        #111111;
+  --surface-mid:    #1A1A1A;
+  --surface-dark:   #222222;
+
+  /* Texto / Estrutura */
+  --foreground:     #FFFFFF;
+  --foreground-mid: #CCCCCC;
+  --muted:          #888888;
+  --border:         #2A2A2A;
+  --border-mid:     #333333;
+
+  /* Destaque — Verde Field */
+  --accent:         #00B341;
+  --accent-hover:   #006837;
+  --accent-light:   #0A2A0F;
+  --accent-fore:    #0A0A0A;
+
+  /* Utilitários */
+  --success:        #00B341;
+  --signal:         #009A36;
+  --radius:         8px;
+  --radius-lg:      12px;
+  --radius-xl:      16px;
+  --shadow-card:    0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-hover:   0 8px 24px rgba(0, 255, 65, 0.15);
+}
+
+@theme inline {
+  --color-background:    var(--background);
+  --color-surface:       var(--surface);
+  --color-surface-mid:   var(--surface-mid);
+  --color-surface-dark:  var(--surface-dark);
+  --color-foreground:    var(--foreground);
+  --color-foreground-mid: var(--foreground-mid);
+  --color-muted:         var(--muted);
+  --color-border:        var(--border);
+  --color-border-mid:    var(--border-mid);
+  --color-accent:        var(--accent);
+  --color-accent-hover:  var(--accent-hover);
+  --color-accent-light:  var(--accent-light);
+  --color-accent-fore:   var(--accent-fore);
+  --color-success:       var(--success);
+  --color-signal:        var(--signal);
+  --font-display:        var(--font-plus-jakarta);
+  --font-sans:           var(--font-inter);
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+* {
+  scrollbar-color: #00B341 #0A0A0A;
+  scrollbar-width: thin;
+}
+
+/* Scrollbar verde field para WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #00B341;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #009A36;
+  box-shadow: 0 0 16px rgba(0, 255, 65, 0.5);
+}
+
+/* ── Typography ── */
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: var(--accent-fore);
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 0 24px rgba(0, 255, 65, 0.4), 0 0 48px rgba(0, 255, 65, 0.15);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--foreground);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--foreground);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-secondary:hover {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* ── Botão Field Verde ── */
+.btn-field {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #00B341;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #00B341;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3), 0 0 32px rgba(0, 255, 65, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.btn-field:hover {
+  background: #00B341;
+  color: #0A0A0A;
+  box-shadow: 0 0 24px rgba(0, 255, 65, 0.6), 0 0 48px rgba(0, 255, 65, 0.2);
+  transform: translateY(-2px);
+}
+.btn-field:active {
+  transform: translateY(0);
+}
+
+/* ── Product Card ── */
+.product-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.product-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: rgba(0, 255, 65, 0.3);
+}
+
+/* ── Glow Card ── */
+.glow-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.05), 0 0 32px rgba(0, 255, 65, 0.02);
+  animation: field-pulse 3s ease-in-out infinite;
+  transition: all 0.3s;
+}
+.glow-card:hover {
+  border-color: rgba(0, 255, 65, 0.5);
+  box-shadow: 0 0 24px rgba(0, 255, 65, 0.15), 0 0 48px rgba(0, 255, 65, 0.05);
+}
+
+/* ── Badge ── */
+.badge {
+  background: var(--accent);
+  color: var(--accent-fore);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.badge-new {
+  background: var(--foreground);
+  color: var(--background);
+}
+.badge-limited {
+  background: var(--signal);
+  color: var(--background);
+}
+
+/* ── Progress Bar Verde Field ── */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  z-index: 9999;
+  background: linear-gradient(90deg, #00B341, #009A36, #00B341);
+  background-size: 200% 100%;
+  animation: progress-shimmer 2s linear infinite;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 30px rgba(0, 255, 65, 0.2);
+}
+@keyframes progress-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Reveal Animations (via IntersectionObserver JS) ── */
+.reveal-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Parallax Soccer (CSS scroll-driven fallback) ── */
+.parallax-soccer {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* ── Keyframes ── */
+/* Field Pulse */
+@keyframes field-pulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.3), 0 0 20px rgba(0, 255, 65, 0.1), 0 0 40px rgba(0, 255, 65, 0.03);
+    border-color: rgba(0, 255, 65, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 255, 65, 0.5), 0 0 36px rgba(0, 255, 65, 0.2), 0 0 64px rgba(0, 255, 65, 0.08);
+    border-color: rgba(0, 255, 65, 0.5);
+  }
+}
+
+/* Ball Bounce */
+@keyframes ball-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  20%  { transform: translateY(-30px) rotate(72deg); }
+  40%  { transform: translateY(0) rotate(144deg); }
+  60%  { transform: translateY(-15px) rotate(216deg); }
+  80%  { transform: translateY(0) rotate(288deg); }
+}
+
+/* Goal Flash */
+@keyframes goal-flash {
+  0%   { opacity: 1; transform: scale(1); }
+  50%  { opacity: 0.5; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Float Particle */
+@keyframes float-particle {
+  0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.8; }
+  90%  { opacity: 0.8; }
+  100% { transform: translateY(-100vh) translateX(100px) rotate(360deg); opacity: 0; }
+}
+
+/* ── Existing animations (preserved) ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background-image: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.04), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+/* ── Field Glow (verde) ── */
+@keyframes fieldPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(0, 255, 65, 0.4), 0 0 20px rgba(0, 255, 65, 0.15), 0 0 40px rgba(0, 255, 65, 0.05); }
+  50%      { box-shadow: 0 0 14px rgba(0, 255, 65, 0.6), 0 0 32px rgba(0, 255, 65, 0.25), 0 0 60px rgba(0, 255, 65, 0.1); }
+}
+.field-glow {
+  animation: fieldPulse 2.5s ease-in-out infinite;
+}
+.field-text {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 30px rgba(0, 255, 65, 0.2);
+}
+.field-border {
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3), inset 0 0 12px rgba(0, 255, 65, 0.05);
+}
+
+/* ── Summer Wave Divider (adapted to green) ── */
+.summer-divider {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0A1A0A 0%, #0D2A0D 50%, #0F3A0F 100%);
+}
+.summer-divider::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(0, 255, 65, 0.08) 40px,
+    rgba(0, 255, 65, 0.08) 44px
+  );
+  border-radius: 50%;
+}
+.summer-divider-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 100%;
+  font-size: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Ken Burns ── */
+@keyframes kenBurns {
+  0%   { transform: scale(1.0); }
+  100% { transform: scale(1.08); }
+}
+.animate-ken-burns {
+  animation: kenBurns 8s ease-out infinite alternate;
+}
+
+/* ── Divider ── */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ── Free shipping bar ── */
+.free-shipping-bar {
+  background: var(--accent);
+  color: var(--accent-fore);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 16px;
+  letter-spacing: 0.03em;
+}
