@@ -2,7 +2,7 @@ export const SITE = {
   name: "Roberto",
   tagline: "Chuteiras Premium",
   description:
-    "Roberto: loja oficial de chuteiras premium. Modelos exclusivos para campo, society e futsal. Nike, Adidas, Puma, Mizuno, Umbro, Penalty e a linha Roberto. Frete grátis para todo Brasil e garantia de 7 dias.",
+    "Roberto — chuteiras premium para atletas que exigem o melhor. Nike, Adidas, Puma, Mizuno, Umbro, Penalty e a linha exclusiva Roberto. Frete grátis para todo o Brasil.",
   url: "https://chuteiras-roberto.vercel.app",
 };
 
@@ -10,7 +10,7 @@ export const NAV_LINKS = [
   { label: "Campo", href: "/colecao?categoria=campo" },
   { label: "Society", href: "/colecao?categoria=society" },
   { label: "Futsal", href: "/colecao?categoria=futsal" },
-  { label: "Lançamentos", href: "/colecao?filtro=novos" },
+  { label: "Novidades", href: "/colecao?filtro=novos" },
 ];
 
 export const TRUST_BADGES = [

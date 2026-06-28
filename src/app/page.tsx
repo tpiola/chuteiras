@@ -1,14 +1,11 @@
 "use client";
 import Script from "next/script";
-import { ScrollReveal, TiltCard } from "@/components/motion/ScrollReveal";
 import ProductStrip from "@/components/home/ProductStrip";
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
 import ProductGrid from "@/components/home/ProductGrid";
-import SocialProof from "@/components/home/SocialProof";
 import LeadCapture from "@/components/home/LeadCapture";
 import FaqSection from "@/components/home/FaqSection";
-import SummerDivider from "@/components/ui/SummerDivider";
 import { PRODUCTS, getFeaturedProducts, getNewArrivals } from "@/lib/products";
 import { FAQ_ITEMS, SITE } from "@/lib/constants";
 
@@ -63,54 +60,35 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productListJsonLd) }}
       />
 
-      {/* Strip de chuteiras */}
       <ProductStrip />
 
-      {/* Hero */}
       <Hero />
 
-      {/* Barra de confiança */}
       <TrustBar />
 
-      <SummerDivider />
-
-      {/* Lançamentos */}
       <ProductGrid
         title="Lançamentos"
-        subtitle="As chuteiras mais recentes do mercado"
+        subtitle="As chuteiras mais recentes — performance que define a temporada"
         products={newArrivals}
         viewAllHref="/colecao?filtro=lancamentos"
       />
 
-      {/* Depoimentos */}
-      <SocialProof />
-
-      <SummerDivider />
-
-      {/* Destaques */}
       <ProductGrid
         title="Mais Vendidas"
-        subtitle="As preferidas de quem joga bola todo fim de semana"
+        subtitle="As preferidas dos atletas que jogam todo fim de semana"
         products={featured}
         viewAllHref="/colecao"
       />
 
-      <SummerDivider />
-
-      {/* Categorias */}
       <ProductGrid
         title="Por Categoria"
-        subtitle="Escolha a chuteira certa para cada tipo de jogo"
+        subtitle="Encontre a chuteira ideal para cada superfície"
         products={PRODUCTS.slice(6, 12)}
         viewAllHref="/colecao"
       />
 
-      <SummerDivider />
-
-      {/* Newsletter */}
       <LeadCapture />
 
-      {/* FAQ */}
       <FaqSection />
     </>
   );
