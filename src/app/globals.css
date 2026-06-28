@@ -218,7 +218,13 @@ h1, h2, h3 {
   animation: pulse-soft 2s ease-in-out infinite;
 }
 
-/* ── 3D Product Spin ── */
+/* ── Text Reveal Character ── */
+.char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* ── Section Divider ── */
 @keyframes spin3d {
   0%   { transform: rotateY(0deg); }
   25%  { transform: rotateY(90deg); }
