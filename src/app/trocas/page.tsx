@@ -3,7 +3,7 @@ import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Trocas e Devoluções | ${SITE.name}`,
-  description: "Política de troca e devolução da Keeus Chuteiras. Saiba como trocar sua chuteira em até 30 dias.",
+  description: "Política de troca e devolução da Roberto. Saiba como trocar sua chuteira em até 30 dias.",
 };
 
 export default function TrocasPage() {
@@ -36,7 +36,7 @@ export default function TrocasPage() {
 
         <h2 className="font-display text-lg uppercase tracking-tight">Como solicitar a troca</h2>
         <ol className="list-decimal space-y-2 pl-5">
-          <li>Entre em contato pelo WhatsApp <strong>(11) 99999-9999</strong> ou e-mail <strong>contato@keeus.com.br</strong> informando o número do pedido.</li>
+          <li>Entre em contato pelo WhatsApp <strong>(11) 99999-9999</strong> ou e-mail <strong>contato@roberto.com.br</strong> informando o número do pedido.</li>
           <li>Nossa equipe enviará um código de postagem reversa gratuito em até 24 horas.</li>
           <li>Leve o produto até uma agência dos Correios com a embalagem original.</li>
           <li>Após o recebimento e conferência, enviaremos o novo produto em até 5 dias úteis.</li>

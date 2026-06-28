@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -44,9 +45,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2.5 bg-[#16A34A] px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-[#15803D] active:scale-[0.98]"
           >
             Ver Catálogo
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <ArrowRight size={16} />
           </Link>
           <Link
             href="/colecao?categoria=futsal"

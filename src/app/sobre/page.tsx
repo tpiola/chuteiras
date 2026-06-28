@@ -3,19 +3,19 @@ import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Sobre | ${SITE.name}`,
-  description: "Conheça a história da Keeus Chuteiras, sua loja especializada em chuteiras de futebol.",
+  description: "Conheça a Roberto, sua loja especializada em chuteiras originais para campo, society e futsal.",
 };
 
 export default function SobrePage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-16 md:px-8">
       <h1 className="font-display text-3xl uppercase tracking-tight md:text-4xl">
-        Sobre a Keeus Chuteiras
+        Sobre a Roberto
       </h1>
 
       <div className="mt-8 space-y-6 text-sm leading-relaxed text-foreground/80">
         <p>
-          A <strong>Keeus Chuteiras</strong> nasceu da paixão pelo futebol. Somos uma loja
+          A <strong>Roberto</strong> nasceu da paixão pelo futebol. Somos uma loja
           online 100% focada em chuteiras — porque acreditamos que cada jogador merece o
           equipamento certo para brilhar em campo, na quadra ou no society.
         </p>
@@ -47,8 +47,8 @@ export default function SobrePage() {
         </ul>
 
         <p className="mt-8">
-          A Keeus Chuteiras é uma loja independente, tocada por gente que ama futebol.
-          Obrigado por escolher a gente. Nos vemos em campo! ⚽
+          A Roberto é uma loja independente, tocada por gente que ama futebol.
+          Obrigado por escolher a gente. Nos vemos em campo!
         </p>
       </div>
     </main>

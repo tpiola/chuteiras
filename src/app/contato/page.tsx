@@ -33,7 +33,7 @@ export default function ContatoPage() {
   return (
     <main className="mx-auto max-w-2xl px-4 py-16 md:px-8">
       <h1 className="font-display text-3xl uppercase tracking-tight md:text-4xl">
-        Fale com a Keeus
+        Fale com a Roberto
       </h1>
       <p className="mt-3 text-sm text-muted">
         Dúvidas sobre modelos, tamanhos ou pedidos? Mande sua mensagem que respondemos

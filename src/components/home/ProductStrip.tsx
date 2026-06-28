@@ -62,7 +62,7 @@ export default function ProductStrip() {
                 <div className="mt-0.5 flex items-center gap-1.5">
                   <Zap size={10} className="text-accent" />
                   <span className="text-[10px] font-semibold text-muted">
-                    {product.category === "campo" ? "Campo" : product.category === "society" ? "Society" : product.category === "futsal" ? "Futsal" : "Chinelo"}
+                    {product.category === "campo" ? "Campo" : product.category === "society" ? "Society" : product.category === "futsal" ? "Futsal" : "Chuteira"}
                   </span>
                 </div>
                 <div className="mt-1 flex items-baseline gap-1.5">

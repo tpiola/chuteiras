@@ -5,7 +5,7 @@ import ProductGrid from "@/components/home/ProductGrid";
 
 export const metadata: Metadata = {
   title: `Coleção | ${SITE.name}`,
-  description: "Toda a coleção Keeus. Chuteiras e chinelos premium: Nike, Adidas, Puma, Mizuno, Umbro, Penalty e linha própria Keeus.",
+  description: "Toda a coleção Roberto. Chuteiras originais: Nike, Adidas, Puma, Mizuno, Umbro, Penalty e linha exclusiva Roberto.",
 };
 
 export default async function ColecaoPage({
@@ -28,7 +28,7 @@ export default async function ColecaoPage({
 
   return (
     <ProductGrid
-      title="Coleção Keeus"
+      title="Coleção Roberto"
       subtitle={`${products.length} produtos disponíveis`}
       products={products}
     />

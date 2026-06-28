@@ -2,6 +2,7 @@
 import Script from "next/script";
 import ProductStrip from "@/components/home/ProductStrip";
 import Hero from "@/components/home/Hero";
+import ProductCarousel from "@/components/home/ProductCarousel";
 import TrustBar from "@/components/home/TrustBar";
 import ProductGrid from "@/components/home/ProductGrid";
 import LeadCapture from "@/components/home/LeadCapture";
@@ -65,6 +66,8 @@ export default function Home() {
       <Hero />
 
       <TrustBar />
+
+      <ProductCarousel />
 
       <ProductGrid
         title="Lançamentos"
