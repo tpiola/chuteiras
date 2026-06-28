@@ -7,6 +7,8 @@ import TrustBar from "@/components/home/TrustBar";
 import ProductGrid from "@/components/home/ProductGrid";
 import LeadCapture from "@/components/home/LeadCapture";
 import FaqSection from "@/components/home/FaqSection";
+import CinematicScrollSection from "@/components/home/CinematicScrollSection";
+import CinematicQuote from "@/components/home/CinematicQuote";
 import { PRODUCTS, getFeaturedProducts, getNewArrivals } from "@/lib/products";
 import { FAQ_ITEMS, SITE } from "@/lib/constants";
 
@@ -68,6 +70,14 @@ export default function Home() {
       <TrustBar />
 
       <ProductCarousel />
+
+      <CinematicScrollSection />
+      <CinematicQuote
+        quote="A chuteira certa muda tudo. Com a Roberto, senti a diferença no primeiro jogo — mais conforto, mais tração, mais confiança pra jogar."
+        author="Carlos A."
+        role="Jogador de society · Franca/SP"
+        accent="#16A34A"
+      />
 
       <ProductGrid
         title="Lançamentos"
