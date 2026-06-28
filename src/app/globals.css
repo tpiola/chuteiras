@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   ROBERTO CHUTEIRAS — VERDE CAMPO PREMIUM
-   bg=#0A0A0A preto · accent=#00B341 verde field · surface=#111111 cinza escuro
+   ROBERTO CHUTEIRAS — LIMA PREMIUM
+   bg=#0A0A0A preto · accent=#84cc16 lima · surface=#111111 cinza escuro
    foreground=#FFFFFF branco · text-muted=#888888
 ───────────────────────────────────────────────────────────────────────────── */
 
@@ -20,20 +20,20 @@
   --border:         #2A2A2A;
   --border-mid:     #333333;
 
-  /* Destaque — Verde Field */
-  --accent:         #00B341;
-  --accent-hover:   #006837;
-  --accent-light:   #0A2A0F;
+  /* Destaque — Lima */
+  --accent:         #84cc16;
+  --accent-hover:   #65a30d;
+  --accent-light:   #1A2E0A;
   --accent-fore:    #0A0A0A;
 
   /* Utilitários */
-  --success:        #00B341;
-  --signal:         #009A36;
+  --success:        #84cc16;
+  --signal:         #65a30d;
   --radius:         8px;
   --radius-lg:      12px;
   --radius-xl:      16px;
   --shadow-card:    0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-hover:   0 8px 24px rgba(0, 255, 65, 0.15);
+  --shadow-hover:   0 8px 24px rgba(132, 204, 22, 0.15);
 }
 
 @theme inline {
@@ -73,7 +73,7 @@ body {
 }
 
 * {
-  scrollbar-color: #00B341 #0A0A0A;
+  scrollbar-color: #84cc16 #0A0A0A;
   scrollbar-width: thin;
 }
 
@@ -86,13 +86,13 @@ body {
   background: #0A0A0A;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00B341;
+  background: #84cc16;
   border-radius: 4px;
-  box-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+  box-shadow: 0 0 8px rgba(132, 204, 22, 0.3);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #009A36;
-  box-shadow: 0 0 16px rgba(0, 255, 65, 0.5);
+  background: #65a30d;
+  box-shadow: 0 0 16px rgba(132, 204, 22, 0.5);
 }
 
 /* ── Typography ── */
@@ -126,7 +126,7 @@ h1, h2, h3 {
 .btn-primary:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
-  box-shadow: 0 0 24px rgba(0, 255, 65, 0.4), 0 0 48px rgba(0, 255, 65, 0.15);
+  box-shadow: 0 0 24px rgba(132, 204, 22, 0.4), 0 0 48px rgba(132, 204, 22, 0.15);
 }
 .btn-primary:active {
   transform: translateY(0);
@@ -152,29 +152,29 @@ h1, h2, h3 {
   color: var(--background);
 }
 
-/* ── Botão Field Verde ── */
+/* ── Botão Field Lima ── */
 .btn-field {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   background: transparent;
-  color: #00B341;
+  color: #84cc16;
   font-weight: 700;
   font-size: 0.875rem;
   border-radius: var(--radius);
   padding: 0.75rem 1.5rem;
-  border: 2px solid #00B341;
+  border: 2px solid #84cc16;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3), 0 0 32px rgba(0, 255, 65, 0.08);
+  box-shadow: 0 0 12px rgba(132, 204, 22, 0.3), 0 0 32px rgba(132, 204, 22, 0.08);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .btn-field:hover {
-  background: #00B341;
+  background: #84cc16;
   color: #0A0A0A;
-  box-shadow: 0 0 24px rgba(0, 255, 65, 0.6), 0 0 48px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 24px rgba(132, 204, 22, 0.6), 0 0 48px rgba(132, 204, 22, 0.2);
   transform: translateY(-2px);
 }
 .btn-field:active {
@@ -193,21 +193,21 @@ h1, h2, h3 {
 .product-card:hover {
   box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
-  border-color: rgba(0, 255, 65, 0.3);
+  border-color: rgba(132, 204, 22, 0.3);
 }
 
 /* ── Glow Card ── */
 .glow-card {
   background: var(--surface);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(0, 255, 65, 0.2);
-  box-shadow: 0 0 12px rgba(0, 255, 65, 0.05), 0 0 32px rgba(0, 255, 65, 0.02);
+  border: 1px solid rgba(132, 204, 22, 0.2);
+  box-shadow: 0 0 12px rgba(132, 204, 22, 0.05), 0 0 32px rgba(132, 204, 22, 0.02);
   animation: field-pulse 3s ease-in-out infinite;
   transition: all 0.3s;
 }
 .glow-card:hover {
-  border-color: rgba(0, 255, 65, 0.5);
-  box-shadow: 0 0 24px rgba(0, 255, 65, 0.15), 0 0 48px rgba(0, 255, 65, 0.05);
+  border-color: rgba(132, 204, 22, 0.5);
+  box-shadow: 0 0 24px rgba(132, 204, 22, 0.15), 0 0 48px rgba(132, 204, 22, 0.05);
 }
 
 /* ── Badge ── */
@@ -230,17 +230,17 @@ h1, h2, h3 {
   color: var(--background);
 }
 
-/* ── Progress Bar Verde Field ── */
+/* ── Progress Bar Lima ── */
 .progress-bar {
   position: fixed;
   top: 0;
   left: 0;
   height: 3px;
   z-index: 9999;
-  background: linear-gradient(90deg, #00B341, #009A36, #00B341);
+  background: linear-gradient(90deg, #84cc16, #65a30d, #84cc16);
   background-size: 200% 100%;
   animation: progress-shimmer 2s linear infinite;
-  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 30px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 10px rgba(132, 204, 22, 0.5), 0 0 30px rgba(132, 204, 22, 0.2);
 }
 @keyframes progress-shimmer {
   0% { background-position: -200% 0; }
@@ -278,12 +278,12 @@ h1, h2, h3 {
 /* Field Pulse */
 @keyframes field-pulse {
   0%, 100% {
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.3), 0 0 20px rgba(0, 255, 65, 0.1), 0 0 40px rgba(0, 255, 65, 0.03);
-    border-color: rgba(0, 255, 65, 0.2);
+    box-shadow: 0 0 8px rgba(132, 204, 22, 0.3), 0 0 20px rgba(132, 204, 22, 0.1), 0 0 40px rgba(132, 204, 22, 0.03);
+    border-color: rgba(132, 204, 22, 0.2);
   }
   50% {
-    box-shadow: 0 0 16px rgba(0, 255, 65, 0.5), 0 0 36px rgba(0, 255, 65, 0.2), 0 0 64px rgba(0, 255, 65, 0.08);
-    border-color: rgba(0, 255, 65, 0.5);
+    box-shadow: 0 0 16px rgba(132, 204, 22, 0.5), 0 0 36px rgba(132, 204, 22, 0.2), 0 0 64px rgba(132, 204, 22, 0.08);
+    border-color: rgba(132, 204, 22, 0.5);
   }
 }
 
@@ -333,32 +333,32 @@ h1, h2, h3 {
   100% { background-position: 200% 0; }
 }
 .animate-shimmer {
-  background-image: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.04), transparent);
+  background-image: linear-gradient(90deg, transparent, rgba(132, 204, 22, 0.04), transparent);
   background-size: 200% 100%;
   animation: shimmer 1.8s ease-in-out infinite;
 }
 
-/* ── Field Glow (verde) ── */
+/* ── Field Glow (lime) ── */
 @keyframes fieldPulse {
-  0%, 100% { box-shadow: 0 0 8px rgba(0, 255, 65, 0.4), 0 0 20px rgba(0, 255, 65, 0.15), 0 0 40px rgba(0, 255, 65, 0.05); }
-  50%      { box-shadow: 0 0 14px rgba(0, 255, 65, 0.6), 0 0 32px rgba(0, 255, 65, 0.25), 0 0 60px rgba(0, 255, 65, 0.1); }
+  0%, 100% { box-shadow: 0 0 8px rgba(132, 204, 22, 0.4), 0 0 20px rgba(132, 204, 22, 0.15), 0 0 40px rgba(132, 204, 22, 0.05); }
+  50%      { box-shadow: 0 0 14px rgba(132, 204, 22, 0.6), 0 0 32px rgba(132, 204, 22, 0.25), 0 0 60px rgba(132, 204, 22, 0.1); }
 }
 .field-glow {
   animation: fieldPulse 2.5s ease-in-out infinite;
 }
 .field-text {
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 30px rgba(0, 255, 65, 0.2);
+  text-shadow: 0 0 10px rgba(132, 204, 22, 0.5), 0 0 30px rgba(132, 204, 22, 0.2);
 }
 .field-border {
-  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3), inset 0 0 12px rgba(0, 255, 65, 0.05);
+  box-shadow: 0 0 12px rgba(132, 204, 22, 0.3), inset 0 0 12px rgba(132, 204, 22, 0.05);
 }
 
-/* ── Summer Wave Divider (adapted to green) ── */
+/* ── Summer Wave Divider (adapted to lime) ── */
 .summer-divider {
   position: relative;
   height: 80px;
   overflow: hidden;
-  background: linear-gradient(180deg, #0A1A0A 0%, #0D2A0D 50%, #0F3A0F 100%);
+  background: linear-gradient(180deg, #1A2E0A 0%, #1F3A0D 50%, #2A4D12 100%);
 }
 .summer-divider::before {
   content: '';
@@ -371,8 +371,8 @@ h1, h2, h3 {
     90deg,
     transparent,
     transparent 40px,
-    rgba(0, 255, 65, 0.08) 40px,
-    rgba(0, 255, 65, 0.08) 44px
+    rgba(132, 204, 22, 0.08) 40px,
+    rgba(132, 204, 22, 0.08) 44px
   );
   border-radius: 50%;
 }
