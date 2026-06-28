@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Roberto",
-  tagline: "Chuteiras Premium",
+  tagline: "Chuteiras para Atletas",
   description:
-    "Roberto — chuteiras premium para atletas que exigem o melhor. Nike, Adidas, Puma, Mizuno, Umbro, Penalty e a linha exclusiva Roberto. Frete grátis para todo o Brasil.",
+    "Roberto — chuteiras originais para campo, society e futsal. Nike, Adidas, Puma, Mizuno, Umbro, Penalty e a linha exclusiva Roberto. Frete grátis para todo o Brasil.",
   url: "https://chuteiras-roberto.vercel.app",
 };
 

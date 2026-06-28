@@ -68,21 +68,21 @@ export default function Home() {
 
       <ProductGrid
         title="Lançamentos"
-        subtitle="As chuteiras mais recentes — performance que define a temporada"
+        subtitle="As chuteiras mais recentes para campo, society e futsal"
         products={newArrivals}
         viewAllHref="/colecao?filtro=lancamentos"
       />
 
       <ProductGrid
         title="Mais Vendidas"
-        subtitle="As preferidas dos atletas que jogam todo fim de semana"
+        subtitle="As mais escolhidas por atletas de todo o Brasil"
         products={featured}
         viewAllHref="/colecao"
       />
 
       <ProductGrid
-        title="Por Categoria"
-        subtitle="Encontre a chuteira ideal para cada superfície"
+        title="Campo e Futsal"
+        subtitle="Chuteiras para cada tipo de jogo e superfície"
         products={PRODUCTS.slice(6, 12)}
         viewAllHref="/colecao"
       />
