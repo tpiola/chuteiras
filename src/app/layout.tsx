@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon-32x32.png",
   },
   manifest: "/site.webmanifest",
-  themeColor: "#00B341",
+  themeColor: "#84cc16",
   openGraph: {
     title: "Roberto — Chuteiras Premium",
     description: "Chuteiras premium para campo, society e futsal. Frete grátis Brasil.",
@@ -181,7 +181,7 @@ export default function RootLayout({
       className={`${inter.variable} ${plusJakarta.variable} h-full antialiased`}
     >
       <head>
-        <meta name="theme-color" content="#00B341" />
+        <meta name="theme-color" content="#84cc16" />
         <meta name="color-scheme" content="dark" />
       </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">
