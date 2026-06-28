@@ -48,7 +48,7 @@ export default function ProductGrid({
   }, []);
 
   return (
-    <section className="bg-background px-4 py-16 md:px-8">
+    <section className="bg-surface px-4 py-16 md:px-8">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-10 flex items-end justify-between">

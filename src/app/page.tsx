@@ -147,8 +147,8 @@ export default function Home() {
         accent="#16A34A"
       />
 
-      {/* PRODUCTS SECTION — com stagger */}
-      <section className="products-section bg-[#0A0A0A] py-20 md:py-28">
+      {/* PRODUCTS SECTION — com stagger — bg alternado */}
+      <section className="products-section bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-12">
           <div className="mb-12 text-center">
             <h2 className="reveal-text font-display text-3xl font-black text-white md:text-5xl">
