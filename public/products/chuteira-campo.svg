@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="50%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="soleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="265" rx="140" ry="12" fill="#000" opacity="0.3"/>
+
+  <!-- Sole / Outsole -->
+  <path d="M60 240 Q55 230 60 218 L80 205 L140 195 L260 192 L320 198 Q340 202 345 215 L350 230 Q352 240 345 248 L330 255 L290 258 L220 260 L140 260 L80 258 L65 252 Z" fill="url(#soleGrad)" opacity="0.9"/>
+
+  <!-- Traction studs -->
+  <ellipse cx="90" cy="255" rx="10" ry="6" fill="#15803D"/>
+  <ellipse cx="130" cy="258" rx="10" ry="6" fill="#15803D"/>
+  <ellipse cx="180" cy="260" rx="10" ry="6" fill="#15803D"/>
+  <ellipse cx="230" cy="260" rx="10" ry="6" fill="#15803D"/>
+  <ellipse cx="280" cy="257" rx="10" ry="6" fill="#15803D"/>
+  <ellipse cx="320" cy="252" rx="8" ry="5" fill="#15803D"/>
+
+  <!-- Upper body -->
+  <path d="M55 220 Q50 200 55 175 L65 145 Q75 120 95 105 L120 90 L160 80 L220 78 L260 82 Q290 88 310 100 L330 115 Q345 135 350 160 L355 185 Q356 200 350 215 L345 225 L330 220 Q335 200 335 175 Q335 145 320 125 L300 108 L270 95 L240 90 L200 88 L160 90 L130 98 Q105 110 90 128 L75 155 Q65 180 65 205 Q65 215 70 225 Z" fill="url(#bodyGrad)" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Ankle collar -->
+  <path d="M55 218 Q52 205 55 190 L65 160 L75 140 L90 120 Q115 100 150 90 L200 85 L240 87 Q270 92 290 102 L310 115 Q325 130 332 150 L340 175 Q345 195 345 212" stroke="#16A34A" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Swoosh / Brand detail -->
+  <path d="M120 170 Q160 145 220 150 Q260 152 290 165 Q300 170 305 178" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- Lace area -->
+  <line x1="150" y1="130" x2="150" y2="200" stroke="#444" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="165" y1="125" x2="165" y2="195" stroke="#444" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="180" y1="122" x2="180" y2="192" stroke="#444" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="195" y1="120" x2="195" y2="190" stroke="#444" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="210" y1="122" x2="210" y2="192" stroke="#444" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="225" y1="125" x2="225" y2="195" stroke="#444" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
+
+  <!-- Highlight / shine layer -->
+  <path d="M60 200 Q70 160 95 130 Q120 105 155 90 Q190 80 230 82 Q270 85 300 100 Q325 115 340 140 Q350 160 352 185" fill="url(#shine)" opacity="0.4"/>
+
+  <!-- Heel counter -->
+  <path d="M55 215 Q50 195 55 175 L65 160 L75 150 L65 170 Q58 190 58 210 Z" fill="#222" opacity="0.5"/>
+
+  <!-- Toe cap -->
+  <path d="M60 215 Q55 200 58 185 L65 165 L75 148 L85 138 Q78 155 72 175 Q65 195 65 215 Z" fill="#222" opacity="0.5"/>
+</svg>

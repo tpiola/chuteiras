@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="60%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="soleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#0F7A33"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="248" rx="120" ry="8" fill="#000" opacity="0.2"/>
+  <path d="M70 218 Q65 210 68 200 L80 188 L140 178 L260 175 L310 180 Q325 185 330 195 L335 208 Q336 218 330 225 L315 230 L275 234 L220 236 L140 236 L90 234 L75 228 Z" fill="url(#soleGrad)" opacity="0.9"/>
+  <!-- Futsal gum sole pattern -->
+  <path d="M90 228 Q130 232 200 234 Q270 232 310 228" stroke="#0F7A33" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.6"/>
+  <path d="M85 222 Q130 226 200 228 Q270 226 315 222" stroke="#0F7A33" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.6"/>
+  <path d="M65 198 Q60 180 63 158 L72 132 Q82 110 100 95 L122 80 L160 70 L215 68 L255 72 Q282 78 300 90 L318 108 Q330 128 333 152 L336 175 Q336 195 330 208 L322 203 Q328 188 328 168 Q328 142 315 122 L298 104 L270 90 L240 84 L200 82 L160 84 L130 90 Q104 100 90 118 L78 145 Q68 170 68 195 Q68 210 72 215 Z" fill="url(#bodyGrad)" stroke="#444" stroke-width="0.5"/>
+  <path d="M115 155 Q155 130 215 135 Q255 137 285 150 Q295 155 300 162" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <!-- Low-cut ankle -->
+  <path d="M65 195 Q62 178 65 160 L72 140 Q78 120 92 108 Q110 92 140 82 L180 76 L220 76 L260 82 Q280 88 295 100" stroke="#16A34A" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Lace area -->
+  <line x1="155" y1="115" x2="155" y2="170" stroke="#555" stroke-width="1.5" stroke-dasharray="2 5" opacity="0.4"/>
+  <line x1="170" y1="110" x2="170" y2="168" stroke="#555" stroke-width="1.5" stroke-dasharray="2 5" opacity="0.4"/>
+  <line x1="185" y1="108" x2="185" y2="166" stroke="#555" stroke-width="1.5" stroke-dasharray="2 5" opacity="0.4"/>
+  <line x1="200" y1="107" x2="200" y2="165" stroke="#555" stroke-width="1.5" stroke-dasharray="2 5" opacity="0.4"/>
+  <line x1="215" y1="108" x2="215" y2="166" stroke="#555" stroke-width="1.5" stroke-dasharray="2 5" opacity="0.4"/>
+  <line x1="230" y1="112" x2="230" y2="168" stroke="#555" stroke-width="1.5" stroke-dasharray="2 5" opacity="0.4"/>
+</svg>

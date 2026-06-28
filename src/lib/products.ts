@@ -19,9 +19,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#FFD700", "#0a0a0b"],
     description:
       "A Mercurial Superfly 9 é feita para velocidade máxima em campo. Cabedal Flyknit com revestimento Gripknit que oferece controle de bola preciso e sensação de pé descalço.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 2,
@@ -40,9 +40,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#FFFFFF", "#0a0a0b"],
     description:
       "Tradição e toque refinado. A Tiempo Legend 10 combina couro premium FlyTouch Pro com amortecimento em espuma ultramacia. Conforto clássico com tecnologia moderna para quem pensa o jogo.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   // ── ADIDAS ────────────────────────────────────────────────────────
   {
@@ -62,9 +62,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#FF0000", "#0a0a0b"],
     description:
       "Quando o gol está nos seus pés. A Predator Accuracy.1 traz elementos de borracha High Definition Grip no cabedal para efeito e precisão nos chutes. Solado com travas estratégicas para máxima tração.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 4,
@@ -83,9 +83,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#FFFFFF"],
     description:
       "A pureza do futebol no seu pé. Cabedal em couro macio que se molda ao formato do pé com o uso. Ideal para society, com solado de borracha especial para grama sintética. Conforto que dura o jogo inteiro.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   // ── PUMA ─────────────────────────────────────────────────────────
   {
@@ -105,9 +105,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#00A3E0", "#0a0a0b"],
     description:
       "Ajuste adaptável que abraça o pé. Tecnologia FUZIONFIT360 com malha elástica que se expande e contrai conforme o movimento. Perfeita para jogadores que mudam de direção constantemente.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 6,
@@ -126,9 +126,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#FFFFFF"],
     description:
       "A realeza do futebol. King Ultimate combina couro K-BETTER supermacio com entressola leve e responsiva. Construção clássica com performance moderna para os camisas 10 de hoje.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   // ── MIZUNO ───────────────────────────────────────────────────────
   {
@@ -148,9 +148,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#FFFFFF", "#E60012"],
     description:
       "A obra-prima japonesa. Couro de canguru legítimo selecionado à mão, costurado artesanalmente no Japão. Peso de apenas 195g com ajuste anatômico perfeito. A escolha de quem valoriza o toque de bola impecável.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 8,
@@ -169,9 +169,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#FFD700"],
     description:
       "Conforto japonês para grama sintética. Cabedal em couro sintético premium com reforço na zona de contato. Palmilha removível e solado próprio para society. Ótimo custo-benefício Mizuno.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   // ── UMBRO ────────────────────────────────────────────────────────
   {
@@ -191,9 +191,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#FF6A00"],
     description:
       "Domínio total na quadra. Cabedal em mesh respirável com reforço sintético nas áreas de maior desgaste. Solado de borracha non-marking com perfil baixo para máxima aderência em piso de quadra.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 10,
@@ -212,9 +212,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#FFFFFF", "#003399"],
     description:
       "Toque suave, controle total. A Tocco III traz cabedal com zonas de toque texturizadas que melhoram o domínio de bola. Entressola em EVA para amortecimento durante o jogo de quadra. Leve e confortável.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   // ── PENALTY ─────────────────────────────────────────────────────
   {
@@ -234,9 +234,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#00B341"],
     description:
       "Brasileira de raiz, acessível e eficiente. Cabedal sintético resistente com costuras reforçadas. Solado multidirecional para society com excelente tração. A escolha inteligente para quem joga toda semana.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 12,
@@ -255,9 +255,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#FFFFFF", "#E60012"],
     description:
       "Entrada no futebol de campo com qualidade. Cabedal em PU resistente à abrasão, solado com travas moldadas em TPU. Ideal para quem está começando ou joga em campos de terra e grama baixa. Custo imbatível.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   // ── ROBERTO ───────────────────────────────────────────────────────
   {
@@ -298,9 +298,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#FFD700"],
     description:
       "Roberto Pro Elite Society: domínio absoluto na grama sintética. Cabedal em microfibra premium com reforço térmico, solado multidirecional exclusivo e palmilha ortopédica. A chuteira que eleva seu jogo a outro nível.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
   {
     id: 15,
@@ -319,9 +319,9 @@ export const PRODUCTS: Product[] = [
     colors: ["#0a0a0b", "#00B341"],
     description:
       "Precisão e leveza na quadra. Roberto Pro Elite Futsal com cabedal em mesh premium respirável, solado non-marking de alto grip e amortecimento em EVA. Leve como um drible, preciso como um passe.",
-    image: "/products/placeholder.svg",
-    gallery: ["/products/placeholder.svg"],
-    angleCount: 1,
+    image: "/products/chuteira-campo.svg",
+    gallery: ["/products/chuteira-campo.svg", "/products/chuteira-gallery-1.svg"],
+    angleCount: 2,
   },
 ];
 

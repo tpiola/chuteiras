@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="50%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="soleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="290" rx="130" ry="10" fill="#000" opacity="0.2"/>
+  <!-- Side view angle -->
+  <path d="M60 255 Q55 240 58 220 L65 195 L75 170 L90 148 L110 128 L135 112 L165 100 L200 95 L240 98 L280 108 Q310 120 330 140 L345 160 Q355 180 358 205 L360 225 Q360 242 355 252 L340 260 L300 268 L240 272 L160 272 L100 268 L75 262 Z" fill="url(#bodyGrad)" stroke="#444" stroke-width="0.8"/>
+  <path d="M70 245 Q65 225 68 205 L78 175 L92 150 Q110 125 135 108 L165 95 L200 90 L240 93 Q275 100 305 118 L325 135 Q340 155 348 180 L352 200 Q354 220 350 240" stroke="#16A34A" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M85 220 Q130 190 200 185 Q270 182 320 200" stroke="#22C55E" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Sole with studs -->
+  <path d="M65 258 Q62 248 65 238 L75 230 L140 222 L260 220 L320 225 Q338 230 342 242 L345 252 Q345 262 338 268 L315 274 L260 278 L180 280 L105 278 L70 270 Z" fill="url(#soleGrad)" opacity="0.85"/>
+  <circle cx="100" cy="272" r="5" fill="#15803D" opacity="0.7"/>
+  <circle cx="140" cy="276" r="5" fill="#15803D" opacity="0.7"/>
+  <circle cx="190" cy="278" r="5" fill="#15803D" opacity="0.7"/>
+  <circle cx="240" cy="277" r="5" fill="#15803D" opacity="0.7"/>
+  <circle cx="290" cy="274" r="5" fill="#15803D" opacity="0.7"/>
+  <circle cx="330" cy="268" r="4" fill="#15803D" opacity="0.7"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2A2A2A"/>
+      <stop offset="50%" stop-color="#3A3A3A"/>
+      <stop offset="100%" stop-color="#2A2A2A"/>
+    </linearGradient>
+    <linearGradient id="soleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="265" rx="130" ry="10" fill="#000" opacity="0.25"/>
+  <path d="M65 235 Q60 225 65 215 L80 200 L140 190 L260 188 L310 195 Q330 200 335 212 L338 225 Q340 235 335 242 L320 248 L280 252 L220 254 L140 254 L85 252 L70 246 Z" fill="url(#soleGrad)" opacity="0.85"/>
+  <ellipse cx="95" cy="248" rx="9" ry="5" fill="#15803D"/>
+  <ellipse cx="140" cy="251" rx="9" ry="5" fill="#15803D"/>
+  <ellipse cx="190" cy="253" rx="9" ry="5" fill="#15803D"/>
+  <ellipse cx="240" cy="252" rx="9" ry="5" fill="#15803D"/>
+  <ellipse cx="290" cy="248" rx="8" ry="5" fill="#15803D"/>
+  <ellipse cx="320" cy="242" rx="7" ry="4" fill="#15803D"/>
+  <path d="M60 215 Q55 195 60 170 L70 140 Q80 115 100 100 L125 85 L165 75 L220 73 L260 78 Q290 85 310 100 L330 120 Q342 142 345 168 L348 192 Q348 208 342 220 L335 215 Q340 200 340 178 Q340 150 325 130 L305 110 L275 95 L240 88 L200 86 L160 88 L130 95 Q105 105 90 125 L75 155 Q65 180 65 205 Q65 215 70 222 Z" fill="url(#bodyGrad)" stroke="#444" stroke-width="0.5"/>
+  <path d="M120 165 Q160 140 220 145 Q260 147 290 160 Q300 165 305 172" stroke="url(#accentGrad)" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <line x1="150" y1="125" x2="150" y2="185" stroke="#555" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.4"/>
+  <line x1="165" y1="120" x2="165" y2="182" stroke="#555" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.4"/>
+  <line x1="180" y1="118" x2="180" y2="180" stroke="#555" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.4"/>
+  <line x1="195" y1="116" x2="195" y2="178" stroke="#555" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.4"/>
+  <line x1="210" y1="118" x2="210" y2="180" stroke="#555" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.4"/>
+  <line x1="225" y1="122" x2="225" y2="183" stroke="#555" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.4"/>
+  <path d="M65 195 Q75 155 100 128 Q125 105 160 92 Q195 82 235 85 Q270 88 300 103 Q322 118 335 140 Q345 160 346 182" fill="url(#accentGrad)" opacity="0.08"/>
+  <path d="M60 210 Q55 190 60 170 L70 148 L80 138 Q72 158 68 180 Q64 198 65 212 Z" fill="#222" opacity="0.4"/>
+</svg>
